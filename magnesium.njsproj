@@ -1,0 +1,74 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>magnesium</Name>
+    <RootNamespace>magnesium</RootNamespace>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>98b27ee0-4c4c-4b71-9b5b-64b05f9e4d10</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <StartWebBrowser>False</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="graphics\conditions\blinded.svg" />
+    <Content Include="graphics\conditions\charmed.svg" />
+    <Content Include="graphics\conditions\deafened.svg" />
+    <Content Include="graphics\conditions\exhaustion.svg" />
+    <Content Include="graphics\conditions\frightened.svg" />
+    <Content Include="graphics\conditions\grappled.svg" />
+    <Content Include="graphics\conditions\incapacitated.svg" />
+    <Content Include="graphics\conditions\invisible.svg" />
+    <Content Include="graphics\conditions\paralyzed.svg" />
+    <Content Include="graphics\conditions\petrified.svg" />
+    <Content Include="graphics\conditions\poisoned.svg" />
+    <Content Include="graphics\conditions\prone.svg" />
+    <Content Include="graphics\conditions\restrained.svg" />
+    <Content Include="graphics\conditions\stunned.svg" />
+    <Content Include="graphics\conditions\unconscious.svg" />
+    <Content Include="README.md" />
+    <Content Include="scripts\actors\baseActor.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="scripts\canvas.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="scripts\config.js" />
+    <Content Include="init.js" />
+    <Content Include="scripts\registerSystemSettings.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="scripts\templates.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="system.json" />
+    <Content Include="template.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="graphics\" />
+    <Folder Include="graphics\conditions\" />
+    <Folder Include="scripts\" />
+    <Folder Include="scripts\actors\" />
+    <Folder Include="scripts\items\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+</Project>

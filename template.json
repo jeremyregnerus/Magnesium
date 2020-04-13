@@ -1,0 +1,135 @@
+{
+  "Actor": {
+    "types": [ "Character", "NPC" ],
+    "templates": {
+      "abilities": {
+        "strength": {
+          "value": 10,
+          "saveBonus": 0
+        },
+        "dexterity": {
+          "value": 10,
+          "saveBonus": 0
+        },
+        "constitution": {
+          "value": 10,
+          "saveBonus": 0
+        },
+        "intelligence": {
+          "value": 10,
+          "saveBonus": 0
+        },
+        "wisdom": {
+          "value": 10,
+          "saveBonus": 0
+        },
+        "charisma": {
+          "value": 10,
+          "saveBonus": 0
+        }
+      },
+      "attributes": {
+        "proficiency": 2
+      },
+      "skills": {
+        "acrobatics": {
+          "value": 0,
+          "ability": "dexterity",
+          "proficient": 0
+        },
+        "animalHandling": {
+          "value": 0,
+          "ability": "widsom",
+          "proficient": 0
+        },
+        "arcana": {
+          "value": 0,
+          "ability": "intelligence",
+          "proficient": 0
+        },
+        "athletics": {
+          "value": 0,
+          "ability": "strength",
+          "proficient": 0
+        },
+        "deception": {
+          "value": 0,
+          "ability": "charisma",
+          "proficient": 0
+        },
+        "history": {
+          "value": 0,
+          "ability": "intelligence",
+          "proficient": 0
+        },
+        "insight": {
+          "value": 0,
+          "ability": "widsom",
+          "proficient": 0
+        },
+        "intimidation": {
+          "value": 0,
+          "ability": "charisma",
+          "proficient": 0
+        },
+        "investigation": {
+          "value": 0,
+          "ability": "intelligence",
+          "proficient": 0
+        },
+        "medicine": {
+          "value": 0,
+          "ability": "widsom",
+          "proficient": 0
+        },
+        "nature": {
+          "value": 0,
+          "ability": "intelligence",
+          "proficient": 0
+        },
+        "perception": {
+          "value": 0,
+          "ability": "widsom",
+          "proficient": 0
+        },
+        "performance": {
+          "value": 0,
+          "ability": "charisma",
+          "proficient": 0
+        },
+        "persuasion": {
+          "value": 0,
+          "ability": "charisma",
+          "proficient": 0
+        },
+        "religion": {
+          "value": 0,
+          "ability": "intelligence",
+          "proficient": 0
+        },
+        "slightOfHand": {
+          "value": 0,
+          "ability": "dexterity",
+          "proficient": 0
+        },
+        "stealth": {
+          "value": 0,
+          "ability": "dexterity",
+          "proficient": 0
+        },
+        "survival": {
+          "value": 0,
+          "ability": "widsom",
+          "proficient": 0
+        }
+      }
+    },
+    "Character": {
+      "templates": [ "abilities" ]
+    },
+    "NPC": {
+      "templates": [ "abilities" ]
+    }
+  },
+  "Item": {}
+}
